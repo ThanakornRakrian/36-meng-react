@@ -1,14 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { createBrowserRouter } from 'react-router-dom'
+import Home from './components/Home'
+import Admin from './components/Admin'
 
-function App() {
-
-  return (
-    <>
-      <h1>Hello react</h1>
-    </>
-  )
-}
+const App = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  },
+  {
+    path: "/Admin",
+    element: <Admin/>
+  }
+]) 
 
 export default App
