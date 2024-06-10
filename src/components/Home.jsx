@@ -33,6 +33,10 @@ const Home = () => {
     setData((prevData) => prevData.filter((value, i) => i !== index));
   };
 
+  const handleDeleteAll = () => {
+    setData([])
+  }
+
   console.log(setData);
 
   return (
@@ -67,6 +71,7 @@ const Home = () => {
               data={data}
               setData={setData}
               handleDelete={handleDelete}
+              handleDeleteAll ={handleDeleteAll}
             />
           ) : null}
           {btn === "User" ? <HomeUser data={data} /> : null}

@@ -29,18 +29,21 @@ const FormInput = ({ setData }) => {
   return (
     <form onSubmit={handleSubmit} className="flex justify-center gap-8 pb-8">
       <input
+        required
         type="text"
         name="name"
         placeholder="First Name"
         className=" border-2 p-2 rounded-md"
       />
       <input
+        required
         type="text"
         name="lastname"
         placeholder="Last Name"
         className=" border-2 p-2 rounded-md"
       />
       <input
+        required
         type="text"
         name="position"
         placeholder="Position"
