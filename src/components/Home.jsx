@@ -24,9 +24,16 @@ const Home = () => {
       position: "Designer",
     },
   ];
-const [data,setData] = useState(mockEmployees)
-
+  const [data, setData] = useState(mockEmployees);
   const [btn, setBtn] = useState("");
+
+  console.log(data);
+
+  const handleDelete = (index) => {
+    setData((prevData) => prevData.filter((value, i) => i !== index));
+  };
+
+  console.log(setData);
 
   return (
     <div>
@@ -55,8 +62,14 @@ const [data,setData] = useState(mockEmployees)
           </button>
         </div>
         <div className="pt-4">
-          {btn === "Admin" ? <HomeAdmin data={data}/> : null}
-          {btn === "User" ? <HomeUser data={data} />  : null}
+          {btn === "Admin" ? (
+            <HomeAdmin
+              data={data}
+              setData={setData}
+              handleDelete={handleDelete}
+            />
+          ) : null}
+          {btn === "User" ? <HomeUser data={data} /> : null}
         </div>
       </div>
     </div>
