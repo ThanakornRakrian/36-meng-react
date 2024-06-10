@@ -5,11 +5,13 @@ const HomeUser = ({ data }) => {
     <div className="flex justify-center w-screen">
       <table className=" w-2/5 text-center">
         <thead>
-          <tr>
-            <th className="border-2 border-gray-400 py-1">Name</th>
-            <th className="border-2 border-gray-400 py-1">Last name</th>
-            <th className="border-2 border-gray-400 py-1">position</th>
-          </tr>
+        {data.length !== 0 ? (
+            <tr>
+              <th className="border-2 border-gray-400 py-1">Name</th>
+              <th className="border-2 border-gray-400 py-1">Last name</th>
+              <th className="border-2 border-gray-400 py-1">position</th>
+            </tr>
+          ) : <h1>No data </h1>}
         </thead>
         <tbody>
           {data.map((data,index) => (

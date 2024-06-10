@@ -11,8 +11,8 @@ const Admin = () => {
         <h1 className="font-bold pt-6 pb-8 text-3xl">
           Thanakorn - Group G - 36
         </h1>
-        <div className="w-64 h-56 bg-yellow-200">
-          <img src={Picture} />
+        <div className="w-56 h-56 bg-yellow-200 overflow-hidden" >
+          <img src={Picture}/>
         </div>
         <h3 className="pt-6 pb-4 font-bold">Short Biography:</h3>
         <p className="text-center w-3/5">
