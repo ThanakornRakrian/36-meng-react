@@ -4,15 +4,29 @@ import HomeAdmin from "./HomeAdmin";
 import HomeUser from "./HomeUser";
 
 const Home = () => {
+  const mockEmployees = [
+    {
+      id: 0,
+      name: "mock",
+      lastname: "mocklastname",
+      position: "Manager",
+    },
+    {
+      id: 1,
+      name: "employee 1",
+      lastname: "em",
+      position: "Engineer",
+    },
+    {
+      id: 2,
+      name: "employee 2",
+      lastname: "lord",
+      position: "Designer",
+    },
+  ];
+const [data,setData] = useState(mockEmployees)
+
   const [btn, setBtn] = useState("");
-
-  //   function btnUser() {
-  //     btn === "User" ? setBtn("") : setBtn("User");
-  //   }
-
-  //   function btnAdmin() {
-  //     btn === "Admin" ? setBtn("") : setBtn("Admin");
-  //   }
 
   return (
     <div>
@@ -41,8 +55,8 @@ const Home = () => {
           </button>
         </div>
         <div className="pt-4">
-          {btn === "Admin" ? <HomeAdmin /> : null}
-          {btn === "User" ? <HomeUser /> : null}
+          {btn === "Admin" ? <HomeAdmin data={data}/> : null}
+          {btn === "User" ? <HomeUser data={data} />  : null}
         </div>
       </div>
     </div>
