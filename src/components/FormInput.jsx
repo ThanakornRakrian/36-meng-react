@@ -6,9 +6,6 @@ const FormInput = ({ setData }) => {
     const name = e.target.name.value;
     const lastname = e.target.lastname.value;
     const position = e.target.position.value;
-    // console.log("e =", position);
-    // console.log("e =", lastName);
-    // console.log("e =", name);
 
     const newData = {
       id: Math.random(),

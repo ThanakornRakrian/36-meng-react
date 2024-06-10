@@ -27,15 +27,15 @@ const Home = () => {
   const [data, setData] = useState(mockEmployees);
   const [btn, setBtn] = useState("");
 
-  console.log(data);
-
   const handleDelete = (index) => {
     setData((prevData) => prevData.filter((value, i) => i !== index));
   };
 
+  
+
   const handleDeleteAll = () => {
-    setData([])
-  }
+    setData([]);
+  };
 
   console.log(setData);
 
@@ -71,7 +71,7 @@ const Home = () => {
               data={data}
               setData={setData}
               handleDelete={handleDelete}
-              handleDeleteAll ={handleDeleteAll}
+              handleDeleteAll={handleDeleteAll}
             />
           ) : null}
           {btn === "User" ? <HomeUser data={data} /> : null}

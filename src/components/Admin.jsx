@@ -15,13 +15,8 @@ const Admin = () => {
           <img src={Picture}/>
         </div>
         <h3 className="pt-6 pb-4 font-bold">Short Biography:</h3>
-        <p className="text-center w-3/5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus corporis dignissimos obcaecati odit fuga saepe fugit
-          ratione iure deleniti corrupti a, temporibus, optio eius nesciunt?
-          Voluptatum neque, perspiciatis amet corrupti deserunt a? Ad tenetur
-          illum repellendus et? Consequatur labore expedita error consequuntur
-          voluptatum repellendus culpa, itaque saepe, dolorem beatae alias.
+        <p className="text-center w-2/5">
+          ผม นายธนกร รักเรียน ชื่อเล่น เม้ง ชอบสีโทนเย็นโดยเฉพาะม่วงกับน้ำเงิน ชอบสัตว์ทุกชนิดโดยเฉพาะงู กิจกรรมที่ชอบ เดินป่า ดำน้ำ บาสเกตบอล กิจกรรมadventure เล่นบอร์ดเกม ปัจจุบันกำลังเรียน coding อยู่ที่ Generation - junior software developer camp 
         </p>
       </div>
     </div>
