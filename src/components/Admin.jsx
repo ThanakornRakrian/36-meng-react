@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Picture from "../assets/broken_hand.jpg";
 
 const Admin = () => {
   return (
@@ -11,7 +12,7 @@ const Admin = () => {
           Thanakorn - Group G - 36
         </h1>
         <div className="w-64 h-56 bg-yellow-200">
-          <img src="../assets/broken_hand.jpg" />
+          <img src={Picture} />
         </div>
         <h3 className="pt-6 pb-4 font-bold">Short Biography:</h3>
         <p className="text-center w-3/5">
